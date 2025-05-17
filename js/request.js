@@ -30,7 +30,7 @@ export const request = (method, path) => {
           return res;
         })
         .then(...params)
-        .catch((err) => console.error("Request error:", err));
+        //.catch((err) => console.error("Request error:", err));
     },
     download(...params) {
       return fetch(url + path, req)
@@ -42,7 +42,7 @@ export const request = (method, path) => {
           return null;
         })
         .then(...params)
-        .catch((err) => console.error("Request error:", err));
+        //.catch((err) => console.error("Request error:", err));
     },
     token(token) {
       if (token.split(".").length === 3) {
